@@ -12,12 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
   //   flipAnimation.classList.remove('active')
   // })
   
+  // TODO: adde event to that grabs the coin sides and chooses it randomly
   button.addEventListener('click', (e) => {
     console.log('fliped');
-      
+    randomizeChildren(coin)
     flipAnimation.classList.toggle('active');
-
-
-
   })
 })
+
+function randomizeChildren(div) {
+  // debugger
+  const sides = div.children
+  console.log(sides)
+}
