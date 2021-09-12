@@ -46,7 +46,7 @@ body {
 }
 
 #coin:hover #inner-coin {
-  transform: rotateY(182deg);
+  transform: rotateY(360deg);
 }
 
 #heads, #tails {
