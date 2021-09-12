@@ -60,7 +60,10 @@ body {
   backface-visibility: hidden;
 }
 
-
 #tails {
   transform: rotateY(180deg);
+}
+
+#flip-btn {
+  margin-top: 10px;
 }
