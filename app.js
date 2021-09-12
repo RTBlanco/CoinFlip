@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const coin = document.getElementById('inner-coin');
   const flipAnimation = document.querySelector('.flip');
   
-  flipAnimation.addEventListener('animationend', () => {
-    console.log('animation ended')
-  });
+  // flipAnimation.addEventListener('animationstart', () => {
+  //   console.log('animation ended')
+  // });
+
+  // flipAnimation.addEventListener('animationend', () => {
+  //   flipAnimation.classList.remove('active')
+  // })
   
   button.addEventListener('click', (e) => {
     console.log('fliped');
-    // if (coin.classList.contains('flip')) {
-      //   coin.classList.
-      // }
-    // coin.className = 'flip';
       
     flipAnimation.classList.toggle('active');
 
