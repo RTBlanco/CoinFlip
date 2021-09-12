@@ -49,6 +49,10 @@ body {
   transform: rotateY(900deg);
 } */
 
+.flip {
+  transform: rotateY(900deg);
+}
+
 #heads, #tails {
   position: absolute;
   width: 100%;
