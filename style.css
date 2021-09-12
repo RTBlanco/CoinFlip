@@ -27,13 +27,13 @@ body {
 }
 
 #coin {
-  border: 1px red solid;
   background-color: transparent;
+  margin: 30px;
   height: 90px;
   width: 90px;
   border-radius: 50px;
+  border: 1px red solid;
   perspective: 1000px;
-  margin: 30px;
 }
 
 #inner-coin {
@@ -53,6 +53,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  border-radius: 50px;
+  background-color: silver;
+  color: black;
+  /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
+}
+
+
+#tails {
+  transform: rotateY(180deg);
 }
