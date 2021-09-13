@@ -45,9 +45,7 @@ body {
   transform-style: preserve-3d
 }
 
-/* #coin:hover #inner-coin {
-  transform: rotateY(900deg);
-} */
+
 
 .flip.active {
   transform: rotateY(720deg);
