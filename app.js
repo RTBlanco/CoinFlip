@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const flipAnimation = document.querySelector('.flip');
 
   const status = {
-    flips: 0,
-    heads: 0,
+    sides: {
+      flips: 0,
+      heads: 0,
+    },
     tails: 0
   }
 
@@ -22,6 +24,10 @@ function randomizeChildren(div, status) {
   let index = Math.floor(Math.random() * sides.length)
   let side = sides[index]
   console.log(side.innerText)
+
+  switch(side.innerText) {
+
+  }
 
   if (side !== div.firstElementChild) {
     div.firstElementChild.className = 'last'
