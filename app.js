@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('flip-btn');
   const coin = document.getElementById('inner-coin');
   const flipAnimation = document.querySelector('.flip');
+
+
   
-  // TODO: adde event to that grabs the coin sides and chooses it randomly
   button.addEventListener('click', (e) => {
     console.log('fliped');
     randomizeChildren(coin)
