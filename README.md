@@ -1,2 +1,2 @@
-# JqueryCoinFlip
-Simple Jquery Coin flip that keeps track of the flips
+# CoinFlip
+Simple Vanilla js Coin flip that keeps track of the flips
