@@ -34,4 +34,3 @@ function randomizeChildren(div) {
     div.insertBefore(side, div.firstElementChild)
   }
 }
-
