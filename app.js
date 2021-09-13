@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const status = document.getElementById('status');
+  const statusArea = document.getElementById('status');
   const button = document.getElementById('flip-btn');
   const coin = document.getElementById('inner-coin');
   const flipAnimation = document.querySelector('.flip');
-
-
   
+  const status = {
+    flips: 0,
+    heads: 0,
+    tails: 0
+  }
+
   button.addEventListener('click', (e) => {
     console.log('fliped');
     randomizeChildren(coin)
