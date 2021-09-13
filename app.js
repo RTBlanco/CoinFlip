@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function randomize(div, status) {
-  // debugger
   const sides = div.children
   let index = Math.floor(Math.random() * sides.length)
   let side = sides[index]
