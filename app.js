@@ -28,10 +28,10 @@ function randomize(div, status) {
 
   switch(side.innerText) {
     case 'heads':
-      status.side.heads += 1;
+      status.sides.heads += 1;
       break; 
     case 'tails':
-      status.side.tails += 1;
+      status.sides.tails += 1;
       break;
   }
 
