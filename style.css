@@ -64,9 +64,6 @@ body {
   /* transform: rotateY(180deg); */
 }
 
-/* #tails {
-  transform: rotateY(180deg);
-} */
 
 .last {
   transform: rotateY(180deg);
