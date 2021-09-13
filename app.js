@@ -6,19 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const status = {
     sides: {
-      flips: 0,
+      tails: 0,
       heads: 0,
     },
-    tails: 0
+    flips: 0
   }
 
   button.addEventListener('click', (e) => {
-    randomizeChildren(coin)
+    randomize(coin, status)
     flipAnimation.classList.toggle('active');
+    status.flips += 1
   })
 })
 
-function randomizeChildren(div, status) {
+function randomize(div, status) {
   // debugger
   const sides = div.children
   let index = Math.floor(Math.random() * sides.length)
@@ -26,7 +27,12 @@ function randomizeChildren(div, status) {
   console.log(side.innerText)
 
   switch(side.innerText) {
-
+    case 'heads':
+      status.side.heads += 1;
+      break; 
+    case 'tails':
+      status.side.tails += 1;
+      break;
   }
 
   if (side !== div.firstElementChild) {
