@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     statusArea.innerHTML = `
       <p>Flips: ${status.flips}</p>
-      <p>Head: ${status.sides.heads}</p>
+      <p>Heads: ${status.sides.heads}</p>
       <p>Tails: ${status.sides.tails}</p>
     `
   })
