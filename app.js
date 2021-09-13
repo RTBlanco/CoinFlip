@@ -4,14 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const coin = document.getElementById('inner-coin');
   const flipAnimation = document.querySelector('.flip');
   
-  // flipAnimation.addEventListener('animationstart', () => {
-  //   console.log('animation ended')
-  // });
-
-  // flipAnimation.addEventListener('animationend', () => {
-  //   flipAnimation.classList.remove('active')
-  // })
-  
   // TODO: adde event to that grabs the coin sides and chooses it randomly
   button.addEventListener('click', (e) => {
     console.log('fliped');
