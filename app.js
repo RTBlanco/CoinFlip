@@ -27,5 +27,11 @@ function randomizeChildren(div) {
   let index = Math.floor(Math.random() * sides.length)
   console.log(sides[index])
   let side = sides[index]
-  
+
+  if (side !== div.firstElementChild) {
+    div.firstElementChild.className = 'last'
+    side.className = 'first'
+    div.insertBefore(side, div.firstElementChild)
+  }
 }
+
