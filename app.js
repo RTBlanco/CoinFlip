@@ -24,4 +24,8 @@ function randomizeChildren(div) {
   // debugger
   const sides = div.children
   console.log(sides)
+  let index = Math.floor(Math.random() * sides.length)
+  console.log(sides[index])
+  let side = sides[index]
+  
 }

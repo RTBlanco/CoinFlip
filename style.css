@@ -50,8 +50,9 @@ body {
 } */
 
 .flip.active {
-  transform: rotateY(900deg);
+  transform: rotateY(720deg);
 }
+
 
 #heads, #tails {
   position: absolute;
