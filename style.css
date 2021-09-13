@@ -49,6 +49,11 @@ body {
   transform: rotateY(900deg);
 } */
 
+.flip.active {
+  transform: rotateY(720deg);
+}
+
+
 #heads, #tails {
   position: absolute;
   width: 100%;
@@ -58,9 +63,14 @@ body {
   color: black;
   /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
+  /* transform: rotateY(180deg); */
 }
 
-#tails {
+/* #tails {
+  transform: rotateY(180deg);
+} */
+
+.last {
   transform: rotateY(180deg);
 }
 
