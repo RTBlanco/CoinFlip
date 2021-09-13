@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
     randomize(coin, status)
     flipAnimation.classList.toggle('active');
     status.flips += 1
+    // updateStatus(statusArea, status)
+    statusArea.innerHTML = `
+      <p>Flips: ${status.flips}</p>
+      <p>Head: ${status.sides.heads}</p>
+      <p>Tails: ${status.sides.tails}</p>
+    `
   })
 })
 
