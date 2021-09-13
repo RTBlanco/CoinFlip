@@ -31,7 +31,7 @@ function randomize(div, status) {
   let side = sides[index]
   console.log(side.innerText)
 
-  switch(side.innerText) {
+  switch(side.id) {
     case 'heads':
       status.sides.heads += 1;
       break; 
