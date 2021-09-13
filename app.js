@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('flip-btn');
   const coin = document.getElementById('inner-coin');
   const flipAnimation = document.querySelector('.flip');
-  
+
   const status = {
     flips: 0,
     heads: 0,
@@ -11,19 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   button.addEventListener('click', (e) => {
-    console.log('fliped');
     randomizeChildren(coin)
     flipAnimation.classList.toggle('active');
   })
 })
 
-function randomizeChildren(div) {
+function randomizeChildren(div, status) {
   // debugger
   const sides = div.children
-  console.log(sides)
   let index = Math.floor(Math.random() * sides.length)
-  console.log(sides[index])
   let side = sides[index]
+  console.log(side.innerText)
 
   if (side !== div.firstElementChild) {
     div.firstElementChild.className = 'last'
